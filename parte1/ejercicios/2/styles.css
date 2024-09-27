@@ -1,0 +1,13 @@
+body{
+  min-height: 100dvh;
+  display: grid;
+  place-content: center;
+}
+
+#box{
+  height: 300px;
+  width: 300px;
+  background-color: tomato;
+  box-shadow: 10px 10px lightgray;
+  border-radius: 10px;
+}

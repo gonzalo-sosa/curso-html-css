@@ -1,0 +1,41 @@
+body{
+  min-height: 100dvh;
+  display: grid;
+  place-content: center;
+}
+
+:root{
+  --th-font-color: #fff;
+  --th-bg-color: #427fef;
+  --tr-bg-color: #eef7ff;
+  --border-color: #c4dcf3; 
+}
+
+table{
+  font-size: 18px;
+  border-collapse: collapse;
+}
+
+thead, 
+tfoot{
+  color: var(--th-font-color);
+  background-color: var(--th-bg-color);
+}
+
+tbody tr:nth-child(odd){
+  background-color: var(--tr-bg-color);
+  border-block: 1px solid var(--border-color);
+}
+
+tfoot{
+  text-align: left;
+}
+
+th,
+td{
+  padding: 5px 6px;
+}
+
+td{
+  font-weight: 500;
+}
