@@ -1,9 +1,23 @@
- #hiding-elements:first-child {
-   display: none;
-   /* oculta elemento y no ocupa espacio */
- }
+#hiding-elements .first{
+  display: none;
+  /* oculta elemento y no ocupa espacio */
+}
 
- #hiding-elements:nth-child(2) {
-   visibility: none;
-   /* oculta el elemento pero ocupa espacio */
- }
+#hiding-elements .second{
+  visibility: hidden;
+  /* oculta el elemento pero ocupa espacio */
+}
+
+#media-queries .container{
+  display: flex;
+  flex-direction: column;
+}
+
+#media-queries .box{
+  background-color: gold;
+  padding: 1rem;
+}
+
+#media-queria :nth-child(2){
+  background-color: blue;
+}
