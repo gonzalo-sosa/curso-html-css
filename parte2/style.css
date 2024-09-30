@@ -1,0 +1,9 @@
+ #hiding-elements:first-child {
+   display: none;
+   /* oculta elemento y no ocupa espacio */
+ }
+
+ #hiding-elements:nth-child(2) {
+   visibility: none;
+   /* oculta el elemento pero ocupa espacio */
+ }
