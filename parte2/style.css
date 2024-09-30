@@ -211,3 +211,98 @@
   display: block;
   clear: both;
 }
+
+/* FLEX BOX */
+
+#flex-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#flex-box .container {
+  display: flex;
+  gap: 0.5rem;
+  border: 3px solid lightgray;
+}
+
+#flex-box .box {
+  width: 7rem;
+  height: 7rem;
+  background-color: gold;
+}
+
+#flex-box .column {
+  flex-direction: column; /* valor por defecto */
+}
+
+#flex-box .column-reverse {
+  flex-direction: column-reverse;
+}
+
+#flex-box .row {
+  flex-direction: row;
+}
+
+#flex-box .row-reverse {
+  flex-direction: row-reverse;
+}
+
+#flex-box .justify-center {
+  justify-content: center; /* justifica el contenido en el eje x */
+}
+
+#flex-box .justify-evenly {
+  justify-content: space-evenly; /* justifica el contenido en el eje x */
+}
+
+#flex-box .justify-between {
+  justify-content: space-between; /* justifica el contenido en el eje x */
+}
+
+#flex-box .align-center {
+  height: 200px;
+  align-items: center; /* alinea los items en fila en el eje y */
+}
+
+#flex-box .align-start {
+  height: 200px;
+  align-items: start;
+}
+
+#flex-box .align-end {
+  height: 200px;
+  align-items: end;
+}
+
+#flex-box .align-content {
+  width: 300px;
+  height: 500px;
+  flex-wrap: wrap;
+  align-content: end; /* alinea el contenido en el eje y (funcion con flex-wrap)*/
+}
+
+#flex-box .self {
+  height: 300px;
+  justify-content: center;
+}
+
+#flex-box .box:nth-of-type(3) {
+  align-self: end;
+}
+
+#flex-box .container {
+  justify-content: center;
+}
+
+#flex-box .basis .box:first-of-type {
+  flex-basis: 4rem;
+}
+
+#flex-box .shrink .box:nth-of-type(2) {
+  flex-shrink: 0;
+}
+
+#flex-box .grow .box:nth-of-type(3) {
+  flex-grow: 1;
+}
