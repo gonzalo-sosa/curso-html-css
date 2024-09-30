@@ -1,9 +1,9 @@
-#hiding-elements .first{
+#hiding-elements p:first-of-type{
   display: none;
   /* oculta elemento y no ocupa espacio */
 }
 
-#hiding-elements .second{
+#hiding-elements p:nth-of-type(2){
   visibility: hidden;
   /* oculta el elemento pero ocupa espacio */
 }
@@ -13,11 +13,14 @@
   flex-direction: column;
 }
 
-#media-queries .box{
+#media-queries .box:first-of-type{
   background-color: gold;
-  padding: 1rem;
 }
 
-#media-queria :nth-child(2){
+#media-queries .box:nth-of-type(2){
   background-color: blue;
+}
+
+#media-queries .box{
+  padding: 1rem;
 }
