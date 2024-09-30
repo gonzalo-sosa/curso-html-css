@@ -88,8 +88,22 @@
 
 /* OVERFLOWING */
 
-#overflowing div {
-  width: 100px;
-  height: 100px;
-  border: 1px solid gold;
+#overflowing .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#overflowing .box {
+  width: 150px;
+  height: 150px;
+  border: 3px solid gold;
+}
+
+#overflowing .box:nth-of-type(2) {
+  overflow: hidden; /* overflow-x: hidden; overflow-y: hidden */
+}
+
+#overflowing .box:nth-of-type(3) {
+  overflow: scroll; /* overflow-x: scroll; overflow-y: scroll */
 }
