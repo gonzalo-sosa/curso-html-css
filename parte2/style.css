@@ -184,3 +184,30 @@
   inset: 0; /* 0 todos los sentidos */
   transform: translate(150%, 50%);
 }
+
+/* FLOATING ELEMENTS */
+
+/* en desuso ya que se utilizaban antes de flex-box */
+
+#floating-elements .avatar {
+  width: 5rem;
+  height: 5rem;
+  background-color: gold;
+}
+
+#floating-elements .left {
+  margin-right: 0.5rem;
+  float: left;
+}
+
+#floating-elements .right {
+  margin-left: 0.5rem;
+  float: right;
+}
+
+/* clase para eliminar el problema del contenedor */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
