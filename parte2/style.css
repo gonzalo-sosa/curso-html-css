@@ -54,4 +54,34 @@
   }
 }
 
-/* */
+/* BOX MODEL */
+
+#box-model p {
+  padding: 20px; /* Añade espacio dentro del párrafo */
+  margin: 20px; /* Añade espacio por fuera del párrafo (SE COMPARTE) */
+}
+
+/* SIZING ELEMENTS */
+
+/* box-sizing: content-box --> Valor por defecto
+  width y height solo aplican al contenido
+*/
+
+/* box sizing: border-box
+  width y height son calculados de acuerdo al padding y al border
+*/
+
+/* Setear todos los elementos como border-box */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+#sizing-elements .box {
+  padding: 0.5rem;
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+  display: inline-block; /* Por defecto los elementos en bloque ocupan todo el espacio disponible pero con inline sólo ocupan de acuerdo al contenido + padding + border */
+}
