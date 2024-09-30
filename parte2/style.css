@@ -107,3 +107,39 @@
 #overflowing .box:nth-of-type(3) {
   overflow: scroll; /* overflow-x: scroll; overflow-y: scroll */
 }
+
+/* MEASUREMENTS UNITS */
+
+/* Las unidades realtivas toman como referencia al elemento padre */
+
+#measurement-units {
+  margin-top: 10rem;
+}
+
+#measurement-units .box {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  border: 3px solid gold;
+}
+
+#measurement-units .p {
+  width: 50%;
+}
+
+#measurement-units .vw {
+  width: 50vw;
+}
+
+#measurement-units .vh {
+  height: 100vh;
+}
+
+#measurement-units .em {
+  font-size: 16px;
+  height: 10em; /* 10 x font-size del elemento actual */
+}
+
+#measurement-units .rem {
+  height: 10rem; /* calculado a partir del font-size * 10 del elemento raíz */
+}
