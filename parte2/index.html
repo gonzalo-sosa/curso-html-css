@@ -6,7 +6,44 @@
     <title>Parte 2</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      display: grid;
+      max-width: 100dvw;
+    }
+    nav {
+      padding: 0.5rem 1rem;
+      font-size: 10px;
+    }
+    nav ul {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      list-style-type: none;
+      a {
+        color: inherit;
+        text-decoration: none;
+        &:visited {
+          color: inherit;
+        }
+      }
+    }
+  </style>
   <body>
+    <nav>
+      <ul style="list-style-type: none">
+        <li><a href="#hiding-elements">Ocultando elementos</a></li>
+        <li><a href="#media-queries">Media Queries</a></li>
+        <li><a href="#box-model">Box model</a></li>
+        <li><a href="#sizing-elements">Sizing elements</a></li>
+        <li><a href="#overflowing">Overflowing</a></li>
+      </ul>
+    </nav>
     <section id="hiding-elements">
       <h2>Ocultando elementos</h2>
       <p>Primer párrafo</p>
@@ -32,6 +69,25 @@
           </p>
         </div>
       </div>
+    </section>
+    <section id="box-model">
+      <h2>Box Model</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
+        architecto ullam laborum velit aliquid commodi reprehenderit fugit
+        beatae facere fuga, obcaecati soluta corrupti sunt omnis saepe. Illo
+        ipsam aut mollitia!
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, optio
+        suscipit! Eos architecto praesentium at, impedit, laudantium provident
+        qui dicta, veniam minima iure voluptas nam expedita enim dolor aliquam
+        ad.
+      </p>
+    </section>
+    <section id="sizing-elements">
+      <div class="box">1</div>
+      <div class="box">2</div>
     </section>
   </body>
 </html>
