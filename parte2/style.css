@@ -143,3 +143,44 @@
 #measurement-units .rem {
   height: 10rem; /* calculado a partir del font-size * 10 del elemento raíz */
 }
+
+/* POSITIONING */
+
+#positioning .container {
+  width: 100%;
+  border: 3px solid lightgreen;
+  position: relative; /* necesario para ofrecer un marco a los elementos con position: absolute; */
+}
+
+#positioning .box {
+  width: 7rem;
+  height: 7rem;
+}
+
+#positioning .one {
+  background-color: gold;
+  /* position: fixed; /* relative al viewport */
+  top: 0;
+}
+
+#positioning .two {
+  background-color: tomato;
+  position: relative; /* posicionamiento relativo al lugar donde acutalmente se encuentra el elemento */
+  left: 5rem; /* es lo mismo que right: -5rem;*/
+  bottom: 4rem;
+  z-index: 100; /* para mover entre elementos en el eje z (mientra mayor sea z- index más adelante se mostrará el elemento) */
+}
+
+#positioning .three {
+  background-color: dodgerblue;
+  position: absolute; /* el elemento es eliminado de la capa por defecto (para los demás elementos no existe, por lo que pueden ocupar su espacio) */
+  right: 0;
+  bottom: 0;
+}
+
+#positioning .four {
+  background-color: coral;
+  position: absolute;
+  inset: 0; /* 0 todos los sentidos */
+  transform: translate(150%, 50%);
+}
