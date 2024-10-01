@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar {
+  background-color: #000;
+}
+
+#navbar ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding-block: 1rem;
+}
+
+#navbar a {
+  color: #ccc;
+  text-decoration: none;
+  &:visited {
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #navbar ul {
+    flex-direction: row;
+    padding-inline: 1rem;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+}
