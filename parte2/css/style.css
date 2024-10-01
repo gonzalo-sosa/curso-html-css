@@ -485,3 +485,88 @@
 #fonts .directions {
   direction: rtl;
 }
+
+/* IMAGES */
+
+#images .bg {
+  width: 640px;
+  height: 640px;
+  background: url(../images/tart_1280.jpg);
+}
+
+#images .bg:first-of-type {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: contain;
+}
+
+#images .bg:nth-of-type(2) {
+  background-attachment: fixed;
+  background-position: -50%;
+}
+
+/* CSS Sprites optimiza las request http al servidor 
+  El servidor devuelve una única imagen que contiene todas las imágenes necesarias
+*/
+
+#images .sprites {
+  display: inline-block;
+  width: 512px;
+  height: 512px;
+}
+
+#images .sprites.bg-1 {
+  background: url(../images/sprite.png) 0px -0px;
+}
+
+#images .sprites.bg-2 {
+  background: url(../images/sprite.png) 0px -512px;
+}
+
+#images .sprites.bg-3 {
+  background: url(../images/sprite.png) 0px -1024px;
+}
+
+#images .clip {
+  width: 50%;
+  clip-path: polygon(
+    0% 20%,
+    60% 20%,
+    60% 0%,
+    100% 50%,
+    60% 100%,
+    60% 80%,
+    0% 80%
+  );
+}
+
+#images .container {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+#images .filter {
+  max-width: 100%;
+}
+
+#images .filter:first-of-type {
+  filter: grayscale(70%);
+
+  &:hover {
+    filter: blur(5px);
+  }
+}
+
+#images .filter:nth-of-type(2) {
+  filter: contrast(30%);
+}
+
+#images .filter:nth-of-type(3) {
+  filter: sepia(70%);
+}
+
+#images .srcset {
+  width: 400px;
+}

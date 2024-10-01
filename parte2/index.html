@@ -62,6 +62,7 @@
           <summary>3</summary>
           <ol>
             <li><a href="#fonts">Fonts</a></li>
+            <li><a href="#images">Images</a></li>
           </ol>
         </details>
       </ul>
@@ -326,6 +327,37 @@
       <p class="columns"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. A in mollitia esse nostrum. Provident modi odio nobis nemo ipsum! In debitis, pariatur assumenda officia facere ipsam. Nobis ratione aliquid expedita.</p>
       <h4>Directions</h4>
       <p class="directions">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla vero expedita vitae beatae voluptatibus possimus magni placeat facilis, voluptas molestiae non eveniet mollitia corporis amet excepturi impedit et! Sunt.</p>
+    </section>
+    <section id="images">
+      <h2>Images</h2>
+      <h3>Content Images</h3>
+      <img src="./images/tart_1280.jpg" alt="Imagen de tarta.">
+      <div class="bg">
+      </div>
+      <div class="bg">
+      </div>
+      <h3>Sprites</h3>
+      <span class="sprites bg-1"></span>
+      <span class="sprites bg-2"></span>
+      <span class="sprites bg-3"></span>
+      <h3>Data URLs</h3>
+      <img src="data:image/png:.." alt="Data image" />
+      <h3>Clipping</h3>
+      <img src="./images/tart_1280.jpg" alt="Tarta." class="clip">
+      <h3>Filtros</h3>
+      <div class="container">
+        <img src="./images/tart_1280.jpg" alt="Tarta." class="filter">
+        <img src="./images/tart_1280.jpg" alt="Tarta." class="filter">
+        <img src="./images/tart_1280.jpg" alt="Tarta." class="filter">
+      </div>
+      <h3>High density Screens</h3>
+      <img  src="./images/meal.jpg" alt="Una plato de salmón." class="srcset"
+            srcset="
+              ./images/meal.jpg 1x,
+              ./images/meal@2x.jpg 2x,
+              ./images/meal@3x.jpg 3x
+            "
+      >
     </section>
   </body>
 </html>
