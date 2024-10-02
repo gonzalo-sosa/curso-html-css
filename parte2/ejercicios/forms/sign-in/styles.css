@@ -94,3 +94,9 @@ button[type="submit"] {
     font-size: 140%;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 160%;
+  }
+}
