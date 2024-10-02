@@ -632,3 +632,88 @@
   border-radius: 5px;
   outline: 0;
 }
+
+#transformations {
+  margin-top: 1rem;
+  display: grid;
+  place-content: center;
+  gap: 2rem;
+}
+
+#transformations .box,
+#transitions .box {
+  height: 100px;
+  width: 100px;
+  background-color: gold;
+}
+
+#transformations .box:first-of-type:hover {
+  transform: rotate(15deg);
+}
+
+#transformations .box:nth-of-type(2):hover {
+  transform: scale(1.5);
+}
+
+#transformations .box:nth-of-type(3):hover {
+  transform: skew(15deg);
+}
+
+#transformations .box:nth-of-type(4):hover {
+  transform: translate(10px, 10px); /* horizontal vertical */
+}
+
+#transformations > .box:nth-child(5):hover {
+  transform: translateX(60px) rotate(30deg);
+}
+
+#transformations > .box:nth-child(6):hover {
+  transform: rotate(30deg) translateX(60px);
+}
+
+#transformations > div:nth-child(16):hover {
+  transform: perspective(200px) translateZ(-20px);
+}
+
+#transformations > div:nth-child(18):hover {
+  transform: perspective(200px) rotateY(50deg);
+}
+
+#transformations > div:nth-child(20):hover {
+  transform: perspective(200px) rotateY(50deg);
+  transform-origin: 0 0;
+}
+
+#transitions {
+  display: grid;
+  place-content: center;
+  gap: 1.5rem;
+}
+
+#transitions .box:hover {
+  transform: rotate(45deg);
+}
+
+#transitions .box:first-of-type {
+  transition: transform 0.5s ease;
+}
+
+#transitions .box:nth-of-type(2) {
+  transition: transform 0.5s ease-in;
+}
+
+#transitions .box:nth-of-type(3) {
+  transition: transform 0.5s ease-out;
+}
+
+#transitions .box:nth-of-type(4) {
+  transition: transform 0.5s ease-in-out;
+}
+
+#transitions .box:nth-of-type(5) {
+  transition: transform 0.5s linear;
+}
+
+#transitions .box:nth-of-type(6) {
+  transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
