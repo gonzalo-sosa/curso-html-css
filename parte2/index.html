@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/e491d952e6.js" crossorigin="anonymous"></script>
   </head>
   <style>
     html {
@@ -21,9 +23,7 @@
     nav {
       padding: 0.5rem 1rem;
     }
-    nav ul {
-      padding: 0;
-      margin: 0;
+    nav {
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
@@ -42,7 +42,6 @@
   </style>
   <body>
     <nav>
-      <ul style="list-style-type: none">
         <details>
           <summary>2</summary>
           <ol start="2">
@@ -65,7 +64,6 @@
             <li><a href="#images">Images</a></li>
           </ol>
         </details>
-      </ul>
     </nav>
     <section id="box-model">
       <h2>Box Model</h2>
@@ -358,6 +356,42 @@
               ./images/meal@3x.jpg 3x
             "
       >
+      <h3>Resolution Switching</h3>
+      <img src="./images//meal.jpg" alt="Meal of salmon." 
+        srcset="
+          ./images/meal.jpg 400w,
+          ./images/meal@2x.jpg 800w,
+          ./images/meal@3x.jpg 1200w
+        "
+        sizes="
+          (max-width: 500px) 100vw,
+          (max-width: 7000px) 50vw,
+          33vw
+        " 
+      >
+      <h3>Modern Image Formats</h3>
+      <picture>
+        <source type="image/webp" srcset="./images/meal.webp x1 ./meal@2x.webp x2">
+        <source type="image/jpeg" srcset="./images/meal.jpg x1 ./meal@2x.jpg x2">
+        <img src="images/meal.jpg" alt="A bowl of salmon and curry.">
+      </picture>
+      <h3>Art direction</h3>
+      <picture>
+        <source media="(max-width: 500px)" srcset="./images/meal-cropped.jpg">
+        <source media="(min-width: 501px)" srcset="./images/meal.jpg">
+        <img src="./images/meal.jpg" alt="A salmon with curry." >
+      </picture>
+      <h3>Scalable Vector Graphics</h3>
+      <div class="svg-bg">
+        <img src="./images/ufo.svg" alt="An image of an ufo." class="svg-ufo">
+      </div>
+      <h3>Font Icons</h3>
+      <i class="fas fa-user-friends"></i>
+      <i class="fas fa-bell"></i>
+      <i class="fas fa-bell fa-2x"></i>
+      <span class="icon">
+        <i class="fas fa-bell"></i>
+      </span>
     </section>
   </body>
 </html>

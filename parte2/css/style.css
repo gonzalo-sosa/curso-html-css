@@ -570,3 +570,19 @@
 #images .srcset {
   width: 400px;
 }
+
+#images .svg-ufo {
+  max-width: 100%;
+  width: 60px;
+}
+
+#images .svg-bg {
+  width: 100%;
+  height: 200px;
+  background: url(../images/constellation.svg);
+}
+
+#images .icon {
+  font-size: 2rem;
+  color: dodgerblue;
+}
