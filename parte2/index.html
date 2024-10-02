@@ -6,64 +6,78 @@
     <title>Parte 2</title>
     <link rel="stylesheet" href="./css/style.css" />
     <!--  FONTS  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <!-- FONTAWESOME -->
-    <script src="https://kit.fontawesome.com/e491d952e6.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/e491d952e6.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <style>
     html {
       scroll-behavior: smooth;
     }
+
     body {
       display: grid;
       max-width: 100dvw;
     }
+
     nav {
       padding: 0.5rem 1rem;
     }
+
     nav {
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
       list-style-type: none;
+
       a {
         color: inherit;
         text-decoration: none;
+
         &:visited {
           color: inherit;
         }
       }
     }
+
     section {
       margin-top: 2.5rem;
     }
   </style>
+
   <body>
     <nav>
-        <details>
-          <summary>2</summary>
-          <ol start="2">
-            <li><a href="#box-model">Box model</a></li>
-            <li><a href="#sizing-elements">Sizing elements</a></li>
-            <li><a href="#overflowing">Overflowing</a></li>
-            <li><a href="#measurement-units">Measurement Units</a></li>
-            <li><a href="#positioning">Positioning</a></li>
-            <li><a href="#floating-elements">Floating Elements</a></li>
-            <li><a href="#flex-box">Flex Box</a></li>
-            <li><a href="#grid">Grid</a></li>
-            <li><a href="#hiding-elements">Ocultando elementos</a></li>
-            <li><a href="#media-queries">Media Queries</a></li>
-          </ol>
-        </details>
-        <details>
-          <summary>3</summary>
-          <ol>
-            <li><a href="#fonts">Fonts</a></li>
-            <li><a href="#images">Images</a></li>
-          </ol>
-        </details>
+      <details>
+        <summary>2</summary>
+        <ol start="2">
+          <li><a href="#box-model">Box model</a></li>
+          <li><a href="#sizing-elements">Sizing elements</a></li>
+          <li><a href="#overflowing">Overflowing</a></li>
+          <li><a href="#measurement-units">Measurement Units</a></li>
+          <li><a href="#positioning">Positioning</a></li>
+          <li><a href="#floating-elements">Floating Elements</a></li>
+          <li><a href="#flex-box">Flex Box</a></li>
+          <li><a href="#grid">Grid</a></li>
+          <li><a href="#hiding-elements">Ocultando elementos</a></li>
+          <li><a href="#media-queries">Media Queries</a></li>
+        </ol>
+      </details>
+      <details>
+        <summary>3</summary>
+        <ol>
+          <li><a href="#fonts">Fonts</a></li>
+          <li><a href="#images">Images</a></li>
+          <li><a href="#forms">Forms</a></li>
+        </ol>
+      </details>
     </nav>
     <section id="box-model">
       <h2>Box Model</h2>
@@ -152,19 +166,19 @@
     <section id="flex-box">
       <h2>Flex Box</h2>
       <h3>Flex direction</h3>
-      <h4>Column</h3>
+      <h4>Column</h4>
       <div class="container column">
         <div class="box">1</div>
         <div class="box">2</div>
         <div class="box">3</div>
       </div>
-      <h4>Column reverse</h3>
+      <h4>Column reverse</h4>
       <div class="container column-reverse">
         <div class="box">1</div>
         <div class="box">2</div>
         <div class="box">3</div>
       </div>
-      <h4>Row</h3>
+      <h4>Row</h4>
       <div class="container row">
         <div class="box">1</div>
         <div class="box">2</div>
@@ -300,40 +314,98 @@
     <section id="fonts">
       <h2>Fonts</h2>
       <h4>Título</h4>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias reiciendis aspernatur hic nemo voluptas qui laborum excepturi ad doloribus sapiente obcaecati cumque, voluptates sequi, est corporis eveniet! Inventore, omnis saepe!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta illum enim commodi. Debitis at dignissimos nisi eum inventore eligendi veniam! Quae praesentium quas sunt quam vero magni. Tempore, consequatur omnis.</p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias
+        reiciendis aspernatur hic nemo voluptas qui laborum excepturi ad
+        doloribus sapiente obcaecati cumque, voluptates sequi, est corporis
+        eveniet! Inventore, omnis saepe!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta illum
+        enim commodi. Debitis at dignissimos nisi eum inventore eligendi veniam!
+        Quae praesentium quas sunt quam vero magni. Tempore, consequatur omnis.
+      </p>
       <h4>System Fonts Stack</h4>
-      <p class="system">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ab expedita dolorum distinctio error aliquid nam molestias quisquam consequuntur, ut mollitia quae incidunt assumenda qui? Delectus cumque asperiores voluptatem accusantium.</p>
+      <p class="system">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ab
+        expedita dolorum distinctio error aliquid nam molestias quisquam
+        consequuntur, ut mollitia quae incidunt assumenda qui? Delectus cumque
+        asperiores voluptatem accusantium.
+      </p>
       <h4>Vertical Spacing</h4>
-      <p class="line-height">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae sit, eligendi impedit porro exercitationem placeat sapiente qui modi veritatis necessitatibus iure pariatur architecto quia repellat, labore laudantium dolores blanditiis.</p>
+      <p class="line-height">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae
+        sit, eligendi impedit porro exercitationem placeat sapiente qui modi
+        veritatis necessitatibus iure pariatur architecto quia repellat, labore
+        laudantium dolores blanditiis.
+      </p>
       <h4>Horizontal Spacing</h4>
-      <p class="horizontal-spacing letter">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni magnam voluptatum facilis, optio at culpa omnis, quod fugit distinctio eligendi neque incidunt id dicta saepe consequatur, sint libero quas doloribus.</p>
-      <p class="horizontal-spacing word">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni magnam voluptatum facilis, optio at culpa omnis, quod fugit distinctio eligendi neque incidunt id dicta saepe consequatur, sint libero quas doloribus.</p>
-      <p class="horizontal-spacing width">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni magnam voluptatum facilis, optio at culpa omnis, quod fugit distinctio eligendi neque incidunt id dicta saepe consequatur, sint libero quas doloribus.</p>
+      <p class="horizontal-spacing letter">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni magnam
+        voluptatum facilis, optio at culpa omnis, quod fugit distinctio eligendi
+        neque incidunt id dicta saepe consequatur, sint libero quas doloribus.
+      </p>
+      <p class="horizontal-spacing word">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni magnam
+        voluptatum facilis, optio at culpa omnis, quod fugit distinctio eligendi
+        neque incidunt id dicta saepe consequatur, sint libero quas doloribus.
+      </p>
+      <p class="horizontal-spacing width">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni magnam
+        voluptatum facilis, optio at culpa omnis, quod fugit distinctio eligendi
+        neque incidunt id dicta saepe consequatur, sint libero quas doloribus.
+      </p>
       <h3>Formatting Text</h3>
       <h4>Text align</h4>
-      <p class="text-align">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero quas sint, veritatis quasi possimus, cum ea eos omnis laboriosam maxime esse corporis autem. Magni quia accusantium iste, quidem non commodi?</p>
+      <p class="text-align">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero quas
+        sint, veritatis quasi possimus, cum ea eos omnis laboriosam maxime esse
+        corporis autem. Magni quia accusantium iste, quidem non commodi?
+      </p>
       <h4>Text indent</h4>
-      <p class="text-indent">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero quas sint, veritatis quasi possimus, cum ea eos omnis laboriosam maxime esse corporis autem. Magni quia accusantium iste, quidem non commodi?</p>
+      <p class="text-indent">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero quas
+        sint, veritatis quasi possimus, cum ea eos omnis laboriosam maxime esse
+        corporis autem. Magni quia accusantium iste, quidem non commodi?
+      </p>
       <h4>Text decoration</h4>
-      <p class="text-decoration">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero quas sint, veritatis quasi possimus, cum ea eos omnis laboriosam maxime esse corporis autem. Magni quia accusantium iste, quidem non commodi?</p>
+      <p class="text-decoration">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero quas
+        sint, veritatis quasi possimus, cum ea eos omnis laboriosam maxime esse
+        corporis autem. Magni quia accusantium iste, quidem non commodi?
+      </p>
       <h4>Text transform</h4>
-      <p class="text-transform">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero quas sint, veritatis quasi possimus, cum ea eos omnis laboriosam maxime esse corporis autem. Magni quia accusantium iste, quidem non commodi?</p>
+      <p class="text-transform">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero quas
+        sint, veritatis quasi possimus, cum ea eos omnis laboriosam maxime esse
+        corporis autem. Magni quia accusantium iste, quidem non commodi?
+      </p>
       <h4>White space</h4>
-      <p class="white-space"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. A in mollitia esse nostrum. Provident modi odio nobis nemo ipsum! In debitis, pariatur assumenda officia facere ipsam. Nobis ratione aliquid expedita.</p>
+      <p class="white-space">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. A in mollitia
+        esse nostrum. Provident modi odio nobis nemo ipsum! In debitis, pariatur
+        assumenda officia facere ipsam. Nobis ratione aliquid expedita.
+      </p>
       <h4>Columns</h4>
-      <p class="columns"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. A in mollitia esse nostrum. Provident modi odio nobis nemo ipsum! In debitis, pariatur assumenda officia facere ipsam. Nobis ratione aliquid expedita.</p>
+      <p class="columns">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. A in mollitia
+        esse nostrum. Provident modi odio nobis nemo ipsum! In debitis, pariatur
+        assumenda officia facere ipsam. Nobis ratione aliquid expedita.
+      </p>
       <h4>Directions</h4>
-      <p class="directions">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla vero expedita vitae beatae voluptatibus possimus magni placeat facilis, voluptas molestiae non eveniet mollitia corporis amet excepturi impedit et! Sunt.</p>
+      <p class="directions">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+        nulla vero expedita vitae beatae voluptatibus possimus magni placeat
+        facilis, voluptas molestiae non eveniet mollitia corporis amet excepturi
+        impedit et! Sunt.
+      </p>
     </section>
     <section id="images">
       <h2>Images</h2>
       <h3>Content Images</h3>
-      <img src="./images/tart_1280.jpg" alt="Imagen de tarta.">
-      <div class="bg">
-      </div>
-      <div class="bg">
-      </div>
+      <img src="./images/tart_1280.jpg" alt="Imagen de tarta." />
+      <div class="bg"></div>
+      <div class="bg"></div>
       <h3>Sprites</h3>
       <span class="sprites bg-1"></span>
       <span class="sprites bg-2"></span>
@@ -341,49 +413,60 @@
       <h3>Data URLs</h3>
       <img src="data:image/png:.." alt="Data image" />
       <h3>Clipping</h3>
-      <img src="./images/tart_1280.jpg" alt="Tarta." class="clip">
+      <img src="./images/tart_1280.jpg" alt="Tarta." class="clip" />
       <h3>Filtros</h3>
       <div class="container">
-        <img src="./images/tart_1280.jpg" alt="Tarta." class="filter">
-        <img src="./images/tart_1280.jpg" alt="Tarta." class="filter">
-        <img src="./images/tart_1280.jpg" alt="Tarta." class="filter">
+        <img src="./images/tart_1280.jpg" alt="Tarta." class="filter" />
+        <img src="./images/tart_1280.jpg" alt="Tarta." class="filter" />
+        <img src="./images/tart_1280.jpg" alt="Tarta." class="filter" />
       </div>
       <h3>High density Screens</h3>
-      <img  src="./images/meal.jpg" alt="Una plato de salmón." class="srcset"
-            srcset="
-              ./images/meal.jpg 1x,
-              ./images/meal@2x.jpg 2x,
-              ./images/meal@3x.jpg 3x
-            "
-      >
-      <h3>Resolution Switching</h3>
-      <img src="./images//meal.jpg" alt="Meal of salmon." 
+      <img
+        src="./images/meal.jpg"
+        alt="Una plato de salmón."
+        class="srcset"
         srcset="
-          ./images/meal.jpg 400w,
-          ./images/meal@2x.jpg 800w,
+          ./images/meal.jpg    1x,
+          ./images/meal@2x.jpg 2x,
+          ./images/meal@3x.jpg 3x
+        "
+      />
+      <h3>Resolution Switching</h3>
+      <img
+        src="./images//meal.jpg"
+        alt="Meal of salmon."
+        srcset="
+          ./images/meal.jpg     400w,
+          ./images/meal@2x.jpg  800w,
           ./images/meal@3x.jpg 1200w
         "
         sizes="
           (max-width: 500px) 100vw,
           (max-width: 7000px) 50vw,
           33vw
-        " 
-      >
+        "
+      />
       <h3>Modern Image Formats</h3>
       <picture>
-        <source type="image/webp" srcset="./images/meal.webp x1 ./meal@2x.webp x2">
-        <source type="image/jpeg" srcset="./images/meal.jpg x1 ./meal@2x.jpg x2">
-        <img src="images/meal.jpg" alt="A bowl of salmon and curry.">
+        <source
+          type="image/webp"
+          srcset="./images/meal.webp x1 ./meal@2x.webp x2"
+        />
+        <source
+          type="image/jpeg"
+          srcset="./images/meal.jpg x1 ./meal@2x.jpg x2"
+        />
+        <img src="images/meal.jpg" alt="A bowl of salmon and curry." />
       </picture>
       <h3>Art direction</h3>
       <picture>
-        <source media="(max-width: 500px)" srcset="./images/meal-cropped.jpg">
-        <source media="(min-width: 501px)" srcset="./images/meal.jpg">
-        <img src="./images/meal.jpg" alt="A salmon with curry." >
+        <source media="(max-width: 500px)" srcset="./images/meal-cropped.jpg" />
+        <source media="(min-width: 501px)" srcset="./images/meal.jpg" />
+        <img src="./images/meal.jpg" alt="A salmon with curry." />
       </picture>
       <h3>Scalable Vector Graphics</h3>
       <div class="svg-bg">
-        <img src="./images/ufo.svg" alt="An image of an ufo." class="svg-ufo">
+        <img src="./images/ufo.svg" alt="An image of an ufo." class="svg-ufo" />
       </div>
       <h3>Font Icons</h3>
       <i class="fas fa-user-friends"></i>
@@ -392,6 +475,39 @@
       <span class="icon">
         <i class="fas fa-bell"></i>
       </span>
+    </section>
+    <section id="forms">
+      <h2>Forms</h2>
+      <h3>Basic form</h3>
+      <form>
+        <!-- for se linkea con el id del input -->
+        <label for="name"></label>
+        <input id="name" type="text" />
+        <div>
+          <label for="email">Email</label>
+          <input id="email" type="email" />
+        </div>
+        <button type="submit">Register</button>
+        <button type="reset">Clear</button>
+      </form>
+      <h3>Styling forms</h3>
+      <form class="form-style">
+        <div class="form-group-c">
+          <label for="name">Name</label>
+          <input id="name" type="text" />
+        </div>
+        <div class="form-group-c">
+          <label for="email">Email</label>
+          <input id="email" type="email" />
+        </div>
+        <button type="submit">Register</button>
+        <button type="reset">Clear</button>
+      </form>
+      <h3>CSS Frameworks</h3>
+      <h4>Bootstrap</h4>
+      <a href="./frameworks/bootstrap/index.html">Demo aquí.</a>
+      <h4>Miligram</h4>
+      <a href="./frameworks/miligram/index.html">Demo aquí.</a>
     </section>
   </body>
 </html>
