@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form with Miligram CSS Framework</title>
+    <!-- MILIGRAM -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body style="display: grid">
+    <h1>Miligram</h1>
+    <h2>Forms</h2>
+    <h3>Form with styles</h3>
+    <form class="mt-5">
+      <div class="form-group">
+        <label class="form-label" for="name">Name</label>
+        <input class="form-control" id="name" type="text" />
+      </div>
+      <div class="form-group mb-5">
+        <label class="form-label" for="email">Email</label>
+        <input class="form-control" id="email" type="email" />
+      </div>
+      <button class="btn btn-primary" type="submit">Register</button>
+      <button class="btn btn-secondary" type="reset">Clear</button>
+    </form>
+    <h3>Text fields</h3>
+    <form>
+      <label for="text">Name</label>
+      <input
+        type="text"
+        name="text"
+        id="text"
+        minlength="1"
+        maxlength="100"
+        autofocus
+      />
+      <label for="number">Age</label>
+      <input
+        type="text"
+        name="minage"
+        id="minage"
+        readonly
+        value="Min age is 18"
+      />
+      <input type="number" name="age" id="age" min="18" value="18" />
+      <label for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="example@email.com"
+      />
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" disabled />
+      <label for="dob">Date of Birth</label>
+      <input type="date" name="dob" id="dob" />
+      <label for="message">Message</label>
+      <textarea name="message" id="message">Some comments...</textarea>
+    </form>
+    <h3>Datalist</h3>
+    <form>
+      <input type="text" list="countries" autocomplete="off" />
+      <datalist id="countries">
+        <option data-value="AU" value="Australia">AU</option>
+        <option data-value="AR" value="Argentina">AR</option>
+        <option data-value="IN" value="India">IN</option>
+        <option data-value="US" value="United States">US</option>
+      </datalist>
+    </form>
+    <h3>Drop down</h3>
+    <form>
+      <h4>Select a single option</h4>
+      <select>
+        <option>Select a course...</option>
+        <option value="1">HTML</option>
+        <option value="2">CSS</option>
+        <option value="3">JavaScript</option>
+      </select>
+      <h4>Select multiple options</h4>
+      <select multiple>
+        <option value="1" selected>HTML</option>
+        <option value="2">CSS</option>
+        <option value="3">JavaScript</option>
+      </select>
+      <h4>Option group</h4>
+      <select>
+        <optgroup label="Front-end Courses">
+          <option value="1">HTML</option>
+          <option value="2">CSS</option>
+          <option value="3">JavaScript</option>
+        </optgroup>
+        <optgroup label="Back-end Courses">
+          <option value="4">Django</option>
+          <option value="5">ASP.NET</option>
+          <option value="6">Node.js</option>
+        </optgroup>
+      </select>
+    </form>
+    <h3>Check Boxes</h3>
+    <form>
+      <div>
+        <input type="checkbox" id="front-end" />
+        <label for="front-end" class="label-inline">Front-end</label>
+      </div>
+      <div>
+        <input type="checkbox" id="back-end" disabled />
+        <label for="back-end" class="label-inline">Back-end</label>
+      </div>
+    </form>
+    <h3>Radio Buttoms</h3>
+    <form>
+      <div>
+        <input type="radio" name="membership" id="silver" checked />
+        <label for="silver" class="label-inline">Silver</label>
+      </div>
+      <div>
+        <input type="radio" name="memebership" id="gold" disabled />
+        <label for="gold" class="label-inline">Gold</label>
+      </div>
+    </form>
+    <h3>Sliders</h3>
+    <form>
+      <input type="range" min="0" max="100" value="90" />
+    </form>
+    <h3>File Inputs</h3>
+    <form>
+      <label class="label-inline" for="mult">Multiple files</label>
+      <input type="file" id="mult" multiple />
+      <label class="label-inline" for="only">Accept only jpg and png</label>
+      <input type="file" id="only" accept=".jpg, .png" />
+      <label class="label-inline" for="images"
+        >Accept all images extensions</label
+      >
+      <input type="file" id="images" accept="image/*" />
+    </form>
+    <h3>Grouping Related Fields</h3>
+    <form>
+      <fieldset>
+        <legend>Billing Address</legend>
+        <input type="text" /><input type="text" /><input type="text" />
+      </fieldset>
+      <fieldset>
+        <legend>Payment</legend>
+        <input type="text" /><input type="text" /><input type="text" />
+      </fieldset>
+      <section>
+        <h2>Other section</h2>
+        <input type="text" /><input type="text" /><input type="text" />
+      </section>
+    </form>
+    <h3>Hidding Fields</h3>
+    <form>
+      <input type="hidden" name="course-id" value="1234" />
+    </form>
+    <h3>Data Validation</h3>
+    <form>
+      <label for="required">Required</label>
+      <input type="text" id="required" required />
+      <label for="minlength">Min lenght</label>
+      <input type="text" id="minlength" minlength="3" />
+      <label for="maxlength">Max lenght</label>
+      <input type="text" id="maxlength" maxlength="10" />
+      <button type="submit">Submit</button>
+    </form>
+    <h3>Submitting the form</h3>
+    <form action="https://formspree.io/f/mgvwgjba" method="post">
+      <input type="text" placeholder="Name" name="name" />
+      <input type="email" placeholder="Email" name="email" />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

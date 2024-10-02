@@ -1,0 +1,12 @@
+body {
+  padding-inline: 1rem;
+}
+
+form {
+  width: 50%;
+  margin: 5rem auto 0 auto;
+}
+
+textarea {
+  resize: none;
+}
