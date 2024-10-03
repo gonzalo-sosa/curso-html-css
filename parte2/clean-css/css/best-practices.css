@@ -1,0 +1,92 @@
+/* NAMING CONVENTION */
+
+/* kebab case */
+.nav-bar {
+}
+
+/* camel case */
+.navBar {
+}
+
+/* pascal case */
+.NavBar {
+}
+
+/* */
+.nav_bar {
+}
+
+/* */
+.nav-bar {
+}
+
+/* LOCAGICAL CONVENTION */
+
+/* Basic styles */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Typography */
+
+h1,
+h2,
+h3 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* Forms */
+
+/* Navigation Bar */
+
+/* Para grandes proyectos separar por archivos */
+
+/* Avoid over SPECIFICITY */
+
+div.nav > ul.items > li {
+}
+
+/* Eliminando selectores directos */
+div.nav ul.items li {
+}
+
+/* Modificando elementos html a clase */
+.nav .items .item {
+}
+
+/* Colisión con selector .item */
+.nav .item {
+}
+
+/* Modificar clase .item a .nav-item */
+.nav-item {
+}
+
+/* Avoid !important*/
+
+/* Sort lines */
+.nav-item {
+  color: tomato;
+  width: 100%;
+  background-color: #fff;
+  font-weight: bold;
+}
+
+/**/
+.nav-item {
+  background-color: #fff;
+  color: tomato;
+  font-weight: bold;
+  width: 100%;
+}
+
+/* Aprovechar herencia */
+.nav-item {
+  font-family: "Courier New", Courier, monospace; /* <-- Mal */
+}
+
+.nav {
+  font-family: "Courier New", Courier, monospace; /* <-- Bien */
+}

@@ -1,0 +1,17 @@
+/* Evitar repertir */
+
+:root {
+  --bg-color: #ffdd36;
+  --border-size: 2px;
+  --border-radius: 10px;
+}
+
+.one {
+  background-color: var(--bg-color);
+  border-radius: var(--border-radius);
+}
+
+.two {
+  background-color: var(--bg-color);
+  border: var(--border-size) solid #ccc;
+}
