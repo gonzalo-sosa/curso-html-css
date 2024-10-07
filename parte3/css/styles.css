@@ -4,6 +4,8 @@
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
+  --color-border: #ccc;
+  --border-radius: 30px;
 }
 
 *,
@@ -227,12 +229,6 @@ a {
   display: inline-block;
 }
 
-@media screen and (min-width: 1024px) {
-  .btn {
-    font-size: 1.5rem;
-  }
-}
-
 .btn--outline {
   background-color: #fff;
   color: var(--color-headings);
@@ -242,4 +238,56 @@ a {
 .btn--outline:hover {
   background-color: var(--color-headings);
   color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
+}
+
+/* Inputs */
+
+.input {
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+  color: var(--color-headings);
+  font: 2rem;
+  outline: 0;
+  padding: 1.5rem 3.5rem;
+}
+
+.input::placeholder {
+  color: #cdcbd7;
+}
+
+.input-group {
+  display: flex;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+}
+
+.input-group .input {
+  border: 0;
+  flex-grow: 1;
+  padding: 1.5rem 1rem;
+}
+
+.input-group .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 4px;
+}
+
+.input-group .btn .icon {
+  fill: #fff;
+  width: 24px;
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
+    font-size: 1.5rem;
+  }
 }
