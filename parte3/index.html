@@ -142,7 +142,7 @@
       </div>
     </section>
 
-    <section class="block container">
+    <section class="block container block-features">
       <header class="block__header">
         <h2>Host on the Cloud to Keep Growing</h2>
         <p>
@@ -221,6 +221,33 @@
         <picture class="feature__image">
           <source
             type="image/webp"
+            srcset="images/wordpress.webp 1x, images/wordpress@2x.webp 2x"
+          />
+          <source
+            type="image/jpg"
+            srcset="images/wordpress.jpg 1x, images/wordpress@2x.jpg 2x"
+          />
+          <img src="images/wordpress@2x.jpg" alt="" />
+        </picture>
+      </article>
+      <article class="grid grid--cols-2 feature">
+        <div class="feature__content">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="images/sprite.svg#clock"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">24/7 Expert Support</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem tempore nulla laborum consequuntur. Sint deserunt
+            harum a consequatur? Nostrum, assumenda?
+          </p>
+          <a href="#" class="link-arrow">Learn More</a>
+        </div>
+        <picture class="feature__image">
+          <source
+            type="image/webp"
             srcset="images/support.webp 1x, images/support@2x.webp 2x"
           />
           <source
@@ -230,6 +257,12 @@
           <img src="images/support@2x.jpg" alt="" />
         </picture>
       </article>
+    </section>
+
+    <section class="block-showcase">
+      <div class="grid grid--cols-2">
+        <img src="" alt="" />
+      </div>
     </section>
 
     <script src="js/main.js"></script>
