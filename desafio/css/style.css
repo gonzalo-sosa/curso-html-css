@@ -607,6 +607,10 @@ header {
   background-color: var(--bg-color);
 }
 
+.footer__content {
+  align-self: center;
+}
+
 .footer__title {
   font-size: 3rem;
   color: var(--title-color);
