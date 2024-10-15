@@ -400,8 +400,10 @@ html {
 }
 
 .hero__content strong {
+  display: inline-block;
   font-size: calc(var(--font-size-huge) * 0.75);
   color: var(--title-color);
+  animation: to-right 1s ease forwards;
 }
 
 .hero__title {
