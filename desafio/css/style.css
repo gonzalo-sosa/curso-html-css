@@ -112,7 +112,7 @@ html {
 /* BLOCK */
 
 .block {
-  margin-block: calc(var(--margin-block) * 0.75);
+  margin-block: calc(var(--margin-block) * 0.85);
   padding: calc(var(--padding-block) * 0.5) calc(var(--padding-inline) / 3);
 }
 
@@ -352,7 +352,8 @@ header {
 }
 
 .hero__content {
-  margin: 5rem 0 2.5rem 0;
+  background-color: var(--bg-color);
+  padding: 5rem 0 2.5rem 0;
   align-self: center;
   text-transform: uppercase;
   text-align: center;
