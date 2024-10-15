@@ -108,15 +108,16 @@
         <p>NEW YORK-BASED WEDDING PHOTOGRAPHER</p>
         <strong class="italiana-regular">UNFORGETTABLE</strong>
         <h1 class="hero__title italiana-regular">WEDDING PHOTOGRAPHY</h1>
-        <a class="link-arrow" href="#">VIEW PORTFOLIO</a>
       </div>
-      <picture class="hero__picture">
-        <source />
-        <source />
-        <img src="images/hero-right-pic.jpg" alt="" />
+      <picture>
+        <img src="images/hero-right-pic.jpg" alt="" srcset="" />
       </picture>
+      <picture>
+        <img src="images/hero-left-pic.jpg" alt="" srcset="" />
+      </picture>
+      <a class="link-arrow" href="#">VIEW PORTFOLIO</a>
     </main>
-    <section class="about pt-sans-regular">
+    <section class="block about pt-sans-regular">
       <div class="grid grid--columns-2">
         <header class="block__header about__header">
           <h2 class="about__title italiana-regular">ROBERTA JONES</h2>
@@ -138,13 +139,30 @@
           <a class="link-arrow" href="#">VIEW PORTFOLIO</a>
         </div>
         <picture class="about__picture">
-          <source />
-          <source />
-          <img src="images/Roberta-About-Pic.jpg" alt="" />
+          <source
+            type="image/webp"
+            sizes="(max-width: 576px) 100vw, 576px"
+            srcset="
+              images/Roberta-About-Pic_w_200.webp 200w,
+              images/Roberta-About-Pic_w_576.webp 576w
+            "
+          />
+          <source
+            type="image/jpg"
+            sizes="(max-width: 576px) 100vw, 576px"
+            srcset="
+              images/Roberta-About-Pic_w_200.jpg 200w,
+              images/Roberta-About-Pic_w_576.jpg 576w
+            "
+          />
+          <img
+            src="images/Roberta-About-Pic_w_576.jpg"
+            alt="Picture of Roberta."
+          />
         </picture>
       </div>
     </section>
-    <section class="gallery pt-sans-regular">
+    <section class="block gallery pt-sans-regular">
       <header class="block__header">
         <h2 class="gallery__title italiana-regular">RECENT WEDDINGS</h2>
       </header>
@@ -166,7 +184,7 @@
       </div>
       <a class="link-arrow" href="#">VIEW PORTFOLIO</a>
     </section>
-    <section class="testimonials">
+    <section class="block testimonials">
       <header class="block__header">
         <h2 class="testimonials__title italiana-regular">KIND WORDS</h2>
       </header>
@@ -257,7 +275,7 @@
         </article>
       </div>
     </section>
-    <section class="carrousel pt-sans-regular">
+    <section class="block carrousel pt-sans-regular">
       <header class="block__header">
         <h2 class="carrousel__title italiana-regular">AS FEATURED IN</h2>
       </header>
