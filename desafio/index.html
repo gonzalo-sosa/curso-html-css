@@ -110,10 +110,42 @@
         <h1 class="hero__title italiana-regular">WEDDING PHOTOGRAPHY</h1>
       </div>
       <picture>
+        <source
+          sizes="(max-width: 625px) 100vw, 625px"
+          srcset="
+            images/hero-right-pic_w_200.webp 200w,
+            images/hero-right-pic_w_625.webp 625w
+          "
+          type="image/webp"
+        />
+        <source
+          sizes="(max-width: 625px) 100vw, 625px"
+          srcset="
+            images/hero-right-pic_w_200.jpg 200w,
+            images/hero-right-pic_w_625.jpg 625w
+          "
+          type="image/jpg"
+        />
         <img src="images/hero-right-pic.jpg" alt="" srcset="" />
       </picture>
       <picture>
-        <img src="images/hero-left-pic.jpg" alt="" srcset="" />
+        <source
+          sizes="(max-width: 358px) 100vw, 358px"
+          srcset="
+            images/hero-left-pic_w_200.webp 200w,
+            images/hero-left-pic_w_358.webp 358w
+          "
+          type="image/webp"
+        />
+        <source
+          sizes="(max-width: 358px) 100vw, 358px"
+          srcset="
+            images/hero-left-pic_w_200.jpg 200w,
+            images/hero-left-pic_w_358.jpg 358w
+          "
+          type="image/jpg"
+        />
+        <img src="images/hero-left-pic_w_358.jpg" alt="" />
       </picture>
       <a class="link-arrow" href="#">VIEW PORTFOLIO</a>
     </main>
@@ -127,7 +159,7 @@
           <p>
             This Text Box widget is placed within a Flexbox Container. If you
             want to learn more about how containers can help you with your
-            website, watch this video.
+            website, <a href="#">watch this video</a>.
           </p>
           <p>
             Ut consequat semper viverra nam libero justo laoreet sit amet. Sit
