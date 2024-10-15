@@ -254,7 +254,7 @@ html {
   position: sticky;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 1000;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -459,6 +459,7 @@ html {
   }
 
   .hero__title {
+    margin-right: 5rem;
     text-align: right;
     font-size: 2.5rem;
   }
@@ -596,17 +597,17 @@ html {
 }
 
 .gallery__picture:nth-of-type(1) {
-  animation: to-left 1s cubic-bezier(0.39, 0.575, 0.565, 1) forwards;
+  animation: to-left 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 .gallery__picture:nth-of-type(2) {
   position: relative;
   z-index: 100;
-  animation: reveal 1s ease forwards;
+  animation: reveal 1s ease both;
 }
 
 .gallery__picture:nth-of-type(3) {
-  animation: to-right 1s cubic-bezier(0.39, 0.575, 0.565, 1) forwards;
+  animation: to-right 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 .gallery__picture:nth-of-type(1),
@@ -742,8 +743,9 @@ html {
 
 .brands__list {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
   place-content: center;
+  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .carrousel .icon {
@@ -754,6 +756,16 @@ html {
   .carrousel .icon {
     width: calc(var(--icon-size) * 7.5);
     height: calc(var(--icon-size) * 7.5);
+  }
+
+  .brands__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .brands__list {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   }
 }
 
