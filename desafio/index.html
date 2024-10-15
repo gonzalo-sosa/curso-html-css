@@ -198,18 +198,61 @@
       </header>
       <div class="grid grid--columns-3">
         <picture class="gallery__picture">
-          <source />
-          <source />
-          <img src="images/0recent-gallery.jpg" alt="" />
+          <source
+            sizes="(max-width: 471px) 100vw, 471px"
+            srcset="
+              images/0recent-gallery_w_200.webp 200w,
+              images/0recent-gallery_w_471.webp 471w
+            "
+            type="image/webp"
+          />
+          <source
+            sizes="(max-width: 471px) 100vw, 471px"
+            srcset="
+              images/0recent-gallery_w_200.jpg 200w,
+              images/0recent-gallery_w_471.jpg 471w
+            "
+            type="image/jpg"
+          />
+          <img src="images/0recent-gallery_w_471.jpg" alt="" />
         </picture>
         <picture class="gallery__picture">
-          <source />
-          <source />
-          <img src="images/1recent-gallery.jpg" alt="" /> </picture
-        ><picture class="gallery__picture">
-          <source />
-          <source />
-          <img src="images/2recent-gallery.jpg" alt="" />
+          <source
+            sizes="(max-width: 471px) 100vw, 471px"
+            srcset="
+              images/1recent-gallery_w_200.webp 200w,
+              images/1recent-gallery_w_470.webp 471w
+            "
+            type="image/webp"
+          />
+          <source
+            sizes="(max-width: 471px) 100vw, 471px"
+            srcset="
+              images/1recent-gallery_w_200.jpg 200w,
+              images/1recent-gallery_w_470.jpg 471w
+            "
+            type="image/jpg"
+          />
+          <img src="images/1recent-gallery_w_470.jpg" alt="" />
+        </picture>
+        <picture class="gallery__picture">
+          <source
+            sizes="(max-width: 471px) 100vw, 471px"
+            srcset="
+              images/2recent-gallery_w_200.webp 200w,
+              images/2recent-gallery_w_471.webp 471w
+            "
+            type="image/webp"
+          />
+          <source
+            sizes="(max-width: 471px) 100vw, 471px"
+            srcset="
+              images/2recent-gallery_w_200.jpg 200w,
+              images/2recent-gallery_w_471.jpg 471w
+            "
+            type="image/jpg"
+          />
+          <img src="images/2recent-gallery_w_471.jpg" alt="" />
         </picture>
       </div>
       <a class="link-arrow" href="#">VIEW PORTFOLIO</a>
