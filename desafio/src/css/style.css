@@ -810,44 +810,6 @@ html {
   align-items: center;
 }
 
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-  5% {
-    transform: translateX(0);
-  }
-  10% {
-    transform: translateX(-100%);
-  }
-  25% {
-    transform: translateX(-100%);
-  }
-  30% {
-    transform: translateX(-200%);
-  }
-  45% {
-    transform: translateX(-200%);
-  }
-  50% {
-    transform: translateX(-300%);
-  }
-  65% {
-    transform: translateX(-300%);
-  }
-  70% {
-    transform: translateX(-400%);
-  }
-  85% {
-    transform: translateX(-400%);
-  }
-  90% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
 .carrousel .icon {
   width: calc(var(--icon-size) * 7.5);
 }
