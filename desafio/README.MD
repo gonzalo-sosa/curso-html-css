@@ -57,7 +57,7 @@ Para los svg accioné diferente, en lugar de descargarlo, copié el código del 
 
 ## Sección Hero
 
-Para el aramado de la sección "hero", tuve complicaciones para encontrar un modelo de diseño que sea "responsive", es decir, que se adapte a todos los tamaños de pantalla. Luego de pensarlo y diagramarlo, ideé una solución, mediante el uso de grid puedo posicionar los elementos de acuerdo a la columna o fila que necesito.
+Para el armado de la sección "hero", tuve complicaciones para encontrar un modelo de diseño que sea "responsive", es decir, que se adapte a todos los tamaños de pantalla. Luego de pensarlo y un poco, ideé una solución, mediante el uso de grid puedo posicionar los elementos de acuerdo a la columna o fila que necesito.
 Entonces, utilizo una clase "grid" para que display del elemento sea de tipo grid y una clase "grid--columns-3" que agrega tres columnas cuando el tamaño de pantalla es el de una tablet o mayor.
 
 ```css
@@ -78,7 +78,7 @@ Entonces, utilizo una clase "grid" para que display del elemento sea de tipo gri
 }
 ```
 
-Con esto puedo indicar la posicion de las imágenes o del título a través de las propiedades "grid-column" y "grid-row".
+Con esto puedo indicar la posición de las imágenes o del título a través de las propiedades "grid-column" y "grid-row".
 
 ```css
 .hero__content {
@@ -86,7 +86,40 @@ Con esto puedo indicar la posicion de las imágenes o del título a través de l
 }
 ```
 
-## Animaciones de galeria
+## Animaciones de galería
+
+Para la galería investigué como realizar animaciones con scroll sin javascript y encontré la siguiente página donde lo explica, [aquí](https://scroll-driven-animations.style/).
+Gracias a lo explicado en la página, integré animaciones con scroll para las imágenes de la galería.
+
+```css
+.gallery .grid {
+  overflow-x: scroll; /* Permito que el contenido que sobresale sea accedido por el scroll */
+  view-timeline-name: --revealing-image; /* Nombre customized */
+  view-timeline-axis: block; /* Para indicar scroll en vertical */
+}
+
+.gallery__picture:nth-of-type(1),
+.gallery__picture:nth-of-type(2),
+.gallery__picture:nth-of-type(3) {
+  animation-timeline: --revealing-image; /* Utilizo nombre customized */
+  animation-range: 25% 50%; /* Que la animación comience por el 25% y finalice al 50%*/
+  animation-fill-mode: both; /* Para que la animación suceda de forma normal y en reversa */
+}
+
+.gallery__picture:nth-of-type(1) {
+  animation: to-left 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.gallery__picture:nth-of-type(2) {
+  position: relative;
+  z-index: 100;
+  animation: reveal 1s ease both;
+}
+
+.gallery__picture:nth-of-type(3) {
+  animation: to-right 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+```
 
 ## Animación de carrousel
 
@@ -169,7 +202,7 @@ Para la imagen de fondo recurrí a utilizar la propiedad "background-image" en u
 }
 ```
 
-Con estas propiedades indico que el fondo no se repita, que cubra el espacio disponible, que se centre y que quee fija al fondo para lograr el efecto de scroll.
+Con estas propiedades indico que el fondo no se repita, que cubra el espacio disponible, que se centre y que fija al fondo para lograr el efecto de scroll.
 
 ## Recursos utilizados
 
