@@ -982,7 +982,7 @@ html {
   color: var(--title-color);
   text-align: center;
   text-wrap: balance;
-  animation: reveal 0.3s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  animation: reveal 1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
 
 .main__desc {
@@ -990,7 +990,7 @@ html {
   color: var(--secondary-color);
   text-align: center;
   line-height: 1.5;
-  animation: reveal 0.3s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  animation: reveal 1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
 
 .line {
