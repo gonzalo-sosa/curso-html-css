@@ -128,7 +128,7 @@ Selecciona un template de Elementor que incluya las siguientes secciones y carac
 
 ### Templates
 
-(Beautiful Website Templates For WordPress By Elementor)[https://elementor.com/library/page/4/]
+[Beautiful Website Templates For WordPress By Elementor](https://elementor.com/library/page/4/)
 
 ### Referencias
 
