@@ -503,7 +503,7 @@ html {
   }
 
   .hero__strong {
-    font-size: calc(var(--font-size-huge) * 2.5);
+    font-size: calc(var(--font-size-huge) * 2.25);
     margin-left: 2rem;
   }
 
@@ -623,8 +623,6 @@ html {
 
 /* MARK: GALLERY 
 */
-
-/* TODO: Arreglar animación scroll no funciona con overflow-x hidden */
 
 .gallery__title {
   text-align: center;
