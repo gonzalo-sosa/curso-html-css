@@ -78,11 +78,98 @@ Entonces, utilizo una clase "grid" para que display del elemento sea de tipo gri
 }
 ```
 
-## Animaciones de galleria
+Con esto puedo indicar la posicion de las imágenes o del título a través de las propiedades "grid-column" y "grid-row".
+
+```css
+.hero__content {
+  grid-column: 1/3;
+}
+```
+
+## Animaciones de galeria
 
 ## Animación de carrousel
 
+Para la animación de carrousel coloqué los "svg" uno al lado del otro y que ocupen todo el ancho del contenedor. El contenedor mantiene escondido el contenido que sobresale. Por último, con animaciones logró que los elementos se muevan hacia la izquierda y que luego vuelvan a lu lugar original de forma infinita.
+
+```css
+.brands {
+  margin-bottom: 4rem;
+  overflow-x: hidden; /* Ocultar el contenido que sobresale */
+}
+
+.brands__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  animation: slide 10s infinite; /* Animación infinita */
+}
+
+.brands__item {
+  min-width: 100%; /* Ocupar todo el ancho */
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Animación de slide hacía la izquierda */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  5% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(-100%);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  30% {
+    transform: translateX(-200%);
+  }
+  45% {
+    transform: translateX(-200%);
+  }
+  50% {
+    transform: translateX(-300%);
+  }
+  65% {
+    transform: translateX(-300%);
+  }
+  70% {
+    transform: translateX(-400%);
+  }
+  85% {
+    transform: translateX(-400%);
+  }
+  90% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+```
+
 ## Imagen de fondo en footer
+
+Para la imagen de fondo recurrí a utilizar la propiedad "background-image" en un div.
+
+```css
+.footer__picture {
+  background-image: url(../images/footer-pic-tall.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+```
+
+Con estas propiedades indico que el fondo no se repita, que cubra el espacio disponible, que se centre y que quee fija al fondo para lograr el efecto de scroll.
 
 ## Recursos utilizados
 
