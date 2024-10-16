@@ -982,6 +982,7 @@ html {
   color: var(--title-color);
   text-align: center;
   text-wrap: balance;
+  animation: reveal 0.3s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
 
 .main__desc {
@@ -989,6 +990,7 @@ html {
   color: var(--secondary-color);
   text-align: center;
   line-height: 1.5;
+  animation: reveal 0.3s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
 
 .line {
@@ -1064,6 +1066,10 @@ html {
 
   & .message-label {
     bottom: 7.5rem;
+
+    + textarea {
+      resize: none;
+    }
   }
 
   & .message-label + textarea {
@@ -1088,7 +1094,7 @@ html {
 }
 
 @media screen and (min-width: 768px) {
-  .contact-section__form .field-input:nth-last-child() {
+  .contact-section .field-input:nth-of-type(5) {
     grid-column: 1/3;
   }
 
