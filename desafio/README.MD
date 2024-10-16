@@ -135,3 +135,13 @@ Selecciona un template de Elementor que incluya las siguientes secciones y carac
 (HTML: Lenguaje de etiquetas de hipertexto | MDN (mozilla.org))[https://developer.mozilla.org/es/docs/Web/HTML]
 
 (CSS | MDN (mozilla.org))[https://developer.mozilla.org/es/docs/Web/CSS]
+
+## Template seleccionado
+
+(Viste previa aquí)[https://elementor.com/library/template-kit/wedding-photographer/preview/]
+
+## Recursos utilizados
+
+(Image format converter)[https://cloudconvert.com/]
+(Responsive Breakpoints)[https://www.responsivebreakpoints.com/]
+(Animaciones con scroll)[https://scroll-driven-animations.style/]
