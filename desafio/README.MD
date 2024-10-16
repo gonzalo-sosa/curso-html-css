@@ -55,6 +55,35 @@ Para los svg accioné diferente, en lugar de descargarlo, copié el código del 
 }
 ```
 
+## Sección Hero
+
+Para el aramado de la sección "hero", tuve complicaciones para encontrar un modelo de diseño que sea "responsive", es decir, que se adapte a todos los tamaños de pantalla. Luego de pensarlo y diagramarlo, ideé una solución, mediante el uso de grid puedo posicionar los elementos de acuerdo a la columna o fila que necesito.
+Entonces, utilizo una clase "grid" para que display del elemento sea de tipo grid y una clase "grid--columns-3" que agrega tres columnas cuando el tamaño de pantalla es el de una tablet o mayor.
+
+```css
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+.grid--columns-3{
+  grid-template-columns: repeat(3, 1fr)
+}
+
+/* Para pantallas tipo tablets o mayores creo 3 filas */
+@media screen and (min-width: 768px) {
+  .hero {
+    grid-template-rows: 35vh 20vh 31.5rem;
+  }
+}
+```
+
+## Animaciones de galleria
+
+## Animación de carrousel
+
+## Imagen de fondo en footer
+
 ## Recursos utilizados
 
 [Google Fonts](https://fonts.google.com/)
