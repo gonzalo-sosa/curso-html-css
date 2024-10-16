@@ -382,6 +382,7 @@ html {
   margin-bottom: 0.8rem;
   margin-inline: 0.5rem;
   text-wrap: balance;
+  animation: reveal 2s cubic-bezier(0.39, 0.575, 0.565, 1) forwards;
 }
 
 .hero__strong {
@@ -391,6 +392,7 @@ html {
   font-family: "Italiana", sans-serif;
   font-size: calc(var(--font-size-huge) * 0.75);
   font-weight: 100;
+  animation: to-right 2s cubic-bezier(0.39, 0.575, 0.565, 1) forwards;
 }
 
 .hero__title {
@@ -398,6 +400,7 @@ html {
   font-weight: 400;
   font-size: var(--font-size-normal);
   color: var(--secondary-color);
+  animation: to-right 2s cubic-bezier(0.39, 0.575, 0.565, 1) forwards;
 }
 
 .hero__picture:nth-of-type(1) {
@@ -622,10 +625,6 @@ html {
 */
 
 /* TODO: Arreglar animación scroll no funciona con overflow-x hidden */
-
-.gallery {
-  overflow-x: hidden;
-}
 
 .gallery__title {
   text-align: center;
