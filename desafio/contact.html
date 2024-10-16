@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italiana&display=swap"
+      rel="stylesheet"
+    />
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/collapsible.js"></script>
+  </head>
+  <body class="pt-sans-regular">
+    <div class="top">
+      <ul class="list contact">
+        <li class="top__item">
+          <a href="#">
+            <svg class="icon">
+              <use xlink:href="images/sprite.svg#phone"></use>
+            </svg>
+            818-758-4076
+          </a>
+        </li>
+        <li class="top__item">
+          <a href="#">
+            <svg class="icon">
+              <use xlink:href="images/sprite.svg#email"></use>
+            </svg>
+            office@photo.com
+          </a>
+        </li>
+        <li class="top__item">
+          <a href="#">
+            <svg class="icon">
+              <use xlink:href="images/sprite.svg#locate"></use>
+            </svg>
+            3146 Koontz Lane, California
+          </a>
+        </li>
+      </ul>
+      <ul class="list social">
+        <li class="top__item social__item">
+          <a href="#">
+            <svg class="icon">
+              <use xlink:href="images/sprite.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="top__item social__item">
+          <a href="#">
+            <svg class="icon">
+              <use xlink:href="images/sprite.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="top__item social__item">
+          <a href="#">
+            <svg class="icon">
+              <use xlink:href="images/sprite.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <nav class="navbar">
+      <span class="logo">
+        <svg class="icon">
+          <use xlink:href="images/sprite.svg#logo"></use>
+        </svg>
+      </span>
+      <div class="collapsible collapsible--expanded">
+        <header class="collapsible__header">
+          <span class="icon-container">
+            <svg class="icon collapsible__bars">
+              <use xlink:href="images/sprite.svg#bars"></use>
+            </svg>
+            <svg class="icon collapsible__xmark">
+              <use xlink:href="images/sprite.svg#xmark"></use>
+            </svg>
+          </span>
+        </header>
+        <div class="collapsible__content">
+          <ul class="list navbar__list">
+            <li class="navbar__item"><a href="#">HOME</a></li>
+            <li class="navbar__item"><a href="#">GALLERY</a></li>
+            <li class="navbar__item"><a href="#">ABOUT</a></li>
+            <li class="navbar__item"><a href="#">KIND WORDS</a></li>
+            <li class="navbar__item"><a href="#">COVERAGE</a></li>
+            <li class="navbar__item"><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="block main">
+      <h1 class="main__title">I'D LOVE TO HEAR FROM YOU</h1>
+      <p class="main__desc">
+        Collect visitor's submissions and store it directly in your Elementor
+        account, or integrate your favorite marketing & CRM tools.
+        <br />
+        <span class="line"></span>
+      </p>
+    </main>
+    <section class="block information">
+      <span>ADDRESS: 2285 Oak Street, Old Forge, New York</span><br />
+      <span>PHONE: 315-369-5472</span><br />
+      <span>EMAIL: info@robertjonesphoto.com</span>
+    </section>
+    <section class="block contact-section">
+      <form method="post" class="grid grid--columns-2 contact-section__form">
+        <div class="field-input">
+          <label for="">First Name*</label><input type="text" />
+        </div>
+        <div class="field-input">
+          <label for="">Last Name*</label><input type="text" />
+        </div>
+        <div class="field-input">
+          <label for="">Phone Number*</label><input type="tel" />
+        </div>
+        <div class="field-input">
+          <label for="">Email Address*</label><input type="email" />
+        </div>
+        <div class="field-input">
+          <label for="" class="message-label">Tell us how we can help*</label>
+          <textarea name="" id=""></textarea>
+        </div>
+        <button type="submit" class="link-arrow contact-section__btn">
+          SUBMIT
+        </button>
+      </form>
+    </section>
+    <section class="block gallery">
+      <div class="grid grid--columns-3">
+        <picture class="gallery__picture">
+          <source
+            sizes="(max-width: 470px) 100vw, 470px"
+            srcset="
+              images/contact_gallery1_w_200.webp 200w,
+              images/contact_gallery1_w_470.webp 470w
+            "
+            type="image/webp"
+          />
+          <source
+            sizes="(max-width: 470px) 100vw, 470px"
+            srcset="
+              images/contact_gallery1_w_200.jpg 200w,
+              images/contact_gallery1_w_470.jpg 470w
+            "
+            type="image/jpg"
+          />
+          <img src="images/contact_gallery1_w_470.jpg" alt="" />
+        </picture>
+        <picture class="gallery__picture">
+          <source
+            sizes="(max-width: 470px) 100vw, 470px"
+            srcset="
+              images/contact_gallery2_w_200.webp 200w,
+              images/contact_gallery2_w_470.webp 470w
+            "
+            type="image/webp"
+          />
+          <source
+            sizes="(max-width: 470px) 100vw, 470px"
+            srcset="
+              images/contact_gallery2_w_200.jpg 200w,
+              images/contact_gallery2_w_470.jpg 470w
+            "
+            type="image/jpg"
+          />
+          <img src="images/contact_gallery2_w_470.jpg" alt="" />
+        </picture>
+        <picture class="gallery__picture">
+          <source
+            sizes="(max-width: 470px) 100vw, 470px"
+            srcset="
+              images/contact_gallery3_w_200.webp 200w,
+              images/contact_gallery3_w_470.webp 470w
+            "
+            type="image/webp"
+          />
+          <source
+            sizes="(max-width: 470px) 100vw, 470px"
+            srcset="
+              images/contact_gallery3_w_200.jpg 200w,
+              images/contact_gallery3_w_470.jpg 470w
+            "
+            type="image/jpg"
+          />
+          <img src="images/contact_gallery3_w_470.jpg" alt="" />
+        </picture>
+        <div class="copy">
+          &copy; 2024 Roberta Jones Photography All Rights Reserved
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
