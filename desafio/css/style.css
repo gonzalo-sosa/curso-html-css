@@ -23,7 +23,7 @@ img {
 
 html {
   font-size: 62.5%;
-  max-width: 100vw;
+  max-width: 100dvw;
   height: 100%;
 }
 
@@ -83,6 +83,15 @@ html {
   letter-spacing: var(--letter-spacing);
   text-transform: uppercase;
   font-size: 1rem;
+  transition: transform 0.3s cubic-bezier(0.95, 0.05, 0.795, 0.035),
+    color 0.3s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+}
+
+.gallery .link-arrow:hover,
+.grid .link-arrow:hover,
+.link-arrow:hover {
+  transform: translateY(10px);
+  color: #000;
 }
 
 .link-arrow::after {
@@ -93,7 +102,7 @@ html {
 }
 
 .link-arrow:hover::after {
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 /* GRID */
@@ -182,7 +191,7 @@ html {
 .collapsible__bars,
 .collapsible--expanded .collapsible__content,
 .collapsible--expanded .collapsible__xmark {
-  max-height: 100vh;
+  max-height: 100dvh;
   opacity: 1;
 }
 
@@ -257,11 +266,12 @@ html {
   top: 0;
   left: 0;
   z-index: 1000;
-  width: 100vw;
+  width: 100dvw;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2.5rem;
+  margin-top: -1px;
 }
 
 .navbar .icon {
@@ -318,7 +328,7 @@ html {
   }
 
   .navbar .collapsible__content {
-    max-height: 100vh;
+    max-height: 100dvh;
     opacity: 1;
   }
 
@@ -344,14 +354,12 @@ html {
 */
 
 .hero {
-  display: grid;
   grid-template-rows: auto auto auto auto;
 }
 
 .hero__picture:nth-of-type(1) {
   max-height: 320px;
   order: 1;
-  overflow-y: hidden;
 
   & > img {
     aspect-ratio: 1/1;
@@ -465,22 +473,24 @@ html {
   }
 
   .hero__subtitle {
+    margin-left: 10rem;
     text-align: left;
     white-space: nowrap;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .hero {
-  }
-
-  .hero__picture:nth-of-type(1) {
-  }
-
   .hero__picture:nth-of-type(2) {
+    padding-right: 15rem;
+    background-color: var(--bg-color);
+    & > img {
+      width: 340px;
+      height: 420px;
+    }
   }
 
   .hero__content {
+    grid-row: unset;
     & strong {
       font-size: calc(var(--font-size-huge) * 2);
     }
@@ -834,7 +844,7 @@ html {
 */
 
 .footer {
-  height: 100vh;
+  height: 100dvh;
   padding-top: 5rem;
   background-color: var(--bg-color);
 }
