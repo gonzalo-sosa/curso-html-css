@@ -1062,6 +1062,12 @@ html {
   }
 }
 
-.gallery .copy {
-  padding-inline: 0;
+.contact-page .gallery__picture {
+  animation-range-end: 35%;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-page .gallery__picture {
+    animation-range-end: 30%;
+  }
 }
